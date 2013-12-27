@@ -1,0 +1,1010 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Facebook.Client.0.7.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Facebook.Client.Fakes.ShimFacebookDialog">
+            <summary>Shim type of Facebook.Client.FacebookDialog</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookDialog.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookDialog.#ctor(Facebook.Client.FacebookDialog)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookDialog.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookDialog.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookDialog.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookDialog.Constructor">
+            <summary>Sets the shim of FacebookDialog.FacebookDialog()</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.ShimFacebookDialog.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.ShimFacebookDialogPage">
+            <summary>Shim type of Facebook.Client.FacebookDialogPage</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookDialogPage.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookDialogPage.#ctor(Facebook.Client.FacebookDialogPage)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookDialogPage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookDialogPage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookDialogPage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookDialogPage.Constructor">
+            <summary>Sets the shim of FacebookDialogPage.FacebookDialogPage()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookDialogPage.InitializeComponent">
+            <summary>Sets the shim of FacebookDialogPage.InitializeComponent()</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.ShimFacebookDialogPage.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookDialogPage.AllInstances.InitializeComponent">
+            <summary>Sets the shim of FacebookDialogPage.InitializeComponent()</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.ShimFacebookSession">
+            <summary>Shim type of Facebook.Client.FacebookSession</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookSession.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookSession.#ctor(Facebook.Client.FacebookSession)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookSession.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookSession.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSession.AccessTokenGet">
+            <summary>Sets the shim of FacebookSession.get_AccessToken()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSession.AccessTokenSetString">
+            <summary>Sets the shim of FacebookSession.set_AccessToken(String value)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSession.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSession.Constructor">
+            <summary>Sets the shim of FacebookSession.FacebookSession()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSession.CurrentPermissionsGet">
+            <summary>Sets the shim of FacebookSession.get_CurrentPermissions()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSession.CurrentPermissionsSetListOfString">
+            <summary>Sets the shim of FacebookSession.set_CurrentPermissions(List`1&lt;String&gt; value)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSession.ExpiresGet">
+            <summary>Sets the shim of FacebookSession.get_Expires()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSession.ExpiresSetDateTime">
+            <summary>Sets the shim of FacebookSession.set_Expires(DateTime value)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSession.FacebookIdGet">
+            <summary>Sets the shim of FacebookSession.get_FacebookId()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSession.FacebookIdSetString">
+            <summary>Sets the shim of FacebookSession.set_FacebookId(String value)</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.ShimFacebookSession.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSession.AllInstances.AccessTokenGet">
+            <summary>Sets the shim of FacebookSession.get_AccessToken()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSession.AllInstances.AccessTokenSetString">
+            <summary>Sets the shim of FacebookSession.set_AccessToken(String value)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSession.AllInstances.CurrentPermissionsGet">
+            <summary>Sets the shim of FacebookSession.get_CurrentPermissions()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSession.AllInstances.CurrentPermissionsSetListOfString">
+            <summary>Sets the shim of FacebookSession.set_CurrentPermissions(List`1&lt;String&gt; value)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSession.AllInstances.ExpiresGet">
+            <summary>Sets the shim of FacebookSession.get_Expires()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSession.AllInstances.ExpiresSetDateTime">
+            <summary>Sets the shim of FacebookSession.set_Expires(DateTime value)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSession.AllInstances.FacebookIdGet">
+            <summary>Sets the shim of FacebookSession.get_FacebookId()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSession.AllInstances.FacebookIdSetString">
+            <summary>Sets the shim of FacebookSession.set_FacebookId(String value)</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.ShimFacebookSessionCacheProvider">
+            <summary>Shim type of Facebook.Client.FacebookSessionCacheProvider</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookSessionCacheProvider.#ctor(Facebook.Client.FacebookSessionCacheProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookSessionCacheProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookSessionCacheProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionCacheProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionCacheProvider.Constructor">
+            <summary>Sets the shim of FacebookSessionCacheProvider.FacebookSessionCacheProvider()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionCacheProvider.CurrentGet">
+            <summary>Sets the shim of FacebookSessionCacheProvider.get_Current()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionCacheProvider.SetCacheProviderFacebookSessionCacheProvider">
+            <summary>Sets the shim of FacebookSessionCacheProvider.SetCacheProvider(FacebookSessionCacheProvider provider)</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.ShimFacebookSessionCacheProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.ShimFacebookSessionClient">
+            <summary>Shim type of Facebook.Client.FacebookSessionClient</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookSessionClient.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookSessionClient.#ctor(Facebook.Client.FacebookSessionClient)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookSessionClient.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookSessionClient.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.AppIdGet">
+            <summary>Sets the shim of FacebookSessionClient.get_AppId()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.AppIdSetString">
+            <summary>Sets the shim of FacebookSessionClient.set_AppId(String value)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.ConstructorString">
+            <summary>Sets the shim of FacebookSessionClient.FacebookSessionClient(String appId)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.CurrentSessionGet">
+            <summary>Sets the shim of FacebookSessionClient.get_CurrentSession()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.CurrentSessionSetFacebookSession">
+            <summary>Sets the shim of FacebookSessionClient.set_CurrentSession(FacebookSession value)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.GetLoginUrlString">
+            <summary>Sets the shim of FacebookSessionClient.GetLoginUrl(String permissions)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.LoginAsync">
+            <summary>Sets the shim of FacebookSessionClient.LoginAsync()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.LoginAsyncString">
+            <summary>Sets the shim of FacebookSessionClient.LoginAsync(String permissions)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.LoginAsyncStringBoolean">
+            <summary>Sets the shim of FacebookSessionClient.LoginAsync(String permissions, Boolean force)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.LoginInProgressGet">
+            <summary>Sets the shim of FacebookSessionClient.get_LoginInProgress()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.LoginInProgressSetBoolean">
+            <summary>Sets the shim of FacebookSessionClient.set_LoginInProgress(Boolean value)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.Logout">
+            <summary>Sets the shim of FacebookSessionClient.Logout()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient._LoginAsyncb__7String">
+            <summary>Sets the shim of FacebookSessionClient.&lt;LoginAsync&gt;b__7(String s1)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient._LoginAsyncb__8String">
+            <summary>Sets the shim of FacebookSessionClient.&lt;LoginAsync&gt;b__8(String s2)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient._LoginAsyncb__9StringString">
+            <summary>Sets the shim of FacebookSessionClient.&lt;LoginAsync&gt;b__9(String s1, String s2)</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.ShimFacebookSessionClient.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.AllInstances.AppIdGet">
+            <summary>Sets the shim of FacebookSessionClient.get_AppId()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.AllInstances.AppIdSetString">
+            <summary>Sets the shim of FacebookSessionClient.set_AppId(String value)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.AllInstances.CurrentSessionGet">
+            <summary>Sets the shim of FacebookSessionClient.get_CurrentSession()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.AllInstances.CurrentSessionSetFacebookSession">
+            <summary>Sets the shim of FacebookSessionClient.set_CurrentSession(FacebookSession value)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.AllInstances.GetLoginUrlString">
+            <summary>Sets the shim of FacebookSessionClient.GetLoginUrl(String permissions)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.AllInstances.LoginAsync">
+            <summary>Sets the shim of FacebookSessionClient.LoginAsync()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.AllInstances.LoginAsyncString">
+            <summary>Sets the shim of FacebookSessionClient.LoginAsync(String permissions)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.AllInstances.LoginAsyncStringBoolean">
+            <summary>Sets the shim of FacebookSessionClient.LoginAsync(String permissions, Boolean force)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.AllInstances.LoginInProgressGet">
+            <summary>Sets the shim of FacebookSessionClient.get_LoginInProgress()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.AllInstances.LoginInProgressSetBoolean">
+            <summary>Sets the shim of FacebookSessionClient.set_LoginInProgress(Boolean value)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionClient.AllInstances.Logout">
+            <summary>Sets the shim of FacebookSessionClient.Logout()</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.ShimFacebookSessionIsolatedStorageCacheProvider">
+            <summary>Shim type of Facebook.Client.FacebookSessionIsolatedStorageCacheProvider</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookSessionIsolatedStorageCacheProvider.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookSessionIsolatedStorageCacheProvider.#ctor(Facebook.Client.FacebookSessionIsolatedStorageCacheProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookSessionIsolatedStorageCacheProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookSessionIsolatedStorageCacheProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionIsolatedStorageCacheProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionIsolatedStorageCacheProvider.Constructor">
+            <summary>Sets the shim of FacebookSessionIsolatedStorageCacheProvider.FacebookSessionIsolatedStorageCacheProvider()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionIsolatedStorageCacheProvider.DeleteSessionData">
+            <summary>Sets the shim of FacebookSessionIsolatedStorageCacheProvider.DeleteSessionData()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionIsolatedStorageCacheProvider.GetSessionData">
+            <summary>Sets the shim of FacebookSessionIsolatedStorageCacheProvider.GetSessionData()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionIsolatedStorageCacheProvider.SaveSessionDataFacebookSession">
+            <summary>Sets the shim of FacebookSessionIsolatedStorageCacheProvider.SaveSessionData(FacebookSession data)</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.ShimFacebookSessionIsolatedStorageCacheProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionIsolatedStorageCacheProvider.AllInstances.DeleteSessionData">
+            <summary>Sets the shim of FacebookSessionIsolatedStorageCacheProvider.DeleteSessionData()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionIsolatedStorageCacheProvider.AllInstances.GetSessionData">
+            <summary>Sets the shim of FacebookSessionIsolatedStorageCacheProvider.GetSessionData()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookSessionIsolatedStorageCacheProvider.AllInstances.SaveSessionDataFacebookSession">
+            <summary>Sets the shim of FacebookSessionIsolatedStorageCacheProvider.SaveSessionData(FacebookSession data)</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.ShimFacebookWebDialog">
+            <summary>Shim type of Facebook.Client.FacebookWebDialog</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookWebDialog.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookWebDialog.#ctor(Facebook.Client.FacebookWebDialog)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookWebDialog.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimFacebookWebDialog.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookWebDialog.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimFacebookWebDialog.Constructor">
+            <summary>Sets the shim of FacebookWebDialog.FacebookWebDialog()</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.ShimFacebookWebDialog.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.ShimLoginPage">
+            <summary>Shim type of Facebook.Client.LoginPage</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimLoginPage.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimLoginPage.#ctor(Facebook.Client.LoginPage)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimLoginPage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.ShimLoginPage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimLoginPage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimLoginPage.BrowserControl_NavigatingObjectNavigatingEventArgs">
+            <summary>Sets the shim of LoginPage.BrowserControl_Navigating(Object sender, NavigatingEventArgs e)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimLoginPage.BrowserControl_NavigationFailedObjectNavigationFailedEventArgs">
+            <summary>Sets the shim of LoginPage.BrowserControl_NavigationFailed(Object sender, NavigationFailedEventArgs e)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimLoginPage.Constructor">
+            <summary>Sets the shim of LoginPage.LoginPage()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimLoginPage.InitializeComponent">
+            <summary>Sets the shim of LoginPage.InitializeComponent()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimLoginPage.LoginPage_BackKeyPressObjectCancelEventArgs">
+            <summary>Sets the shim of LoginPage.LoginPage_BackKeyPress(Object sender, CancelEventArgs e)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimLoginPage.OnNavigatedToNavigationEventArgs">
+            <summary>Sets the shim of LoginPage.OnNavigatedTo(NavigationEventArgs e)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimLoginPage.OnNavigatingFromNavigatingCancelEventArgs">
+            <summary>Sets the shim of LoginPage.OnNavigatingFrom(NavigatingCancelEventArgs e)</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.ShimLoginPage.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimLoginPage.AllInstances.BrowserControl_NavigatingObjectNavigatingEventArgs">
+            <summary>Sets the shim of LoginPage.BrowserControl_Navigating(Object sender, NavigatingEventArgs e)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimLoginPage.AllInstances.BrowserControl_NavigationFailedObjectNavigationFailedEventArgs">
+            <summary>Sets the shim of LoginPage.BrowserControl_NavigationFailed(Object sender, NavigationFailedEventArgs e)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimLoginPage.AllInstances.InitializeComponent">
+            <summary>Sets the shim of LoginPage.InitializeComponent()</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimLoginPage.AllInstances.LoginPage_BackKeyPressObjectCancelEventArgs">
+            <summary>Sets the shim of LoginPage.LoginPage_BackKeyPress(Object sender, CancelEventArgs e)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimLoginPage.AllInstances.OnNavigatedToNavigationEventArgs">
+            <summary>Sets the shim of LoginPage.OnNavigatedTo(NavigationEventArgs e)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.ShimLoginPage.AllInstances.OnNavigatingFromNavigatingCancelEventArgs">
+            <summary>Sets the shim of LoginPage.OnNavigatingFrom(NavigatingCancelEventArgs e)</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.StubFacebookDialog">
+            <summary>Stub type of Facebook.Client.FacebookDialog</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialog.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialog.InitializeStub">
+            <summary>Initializes a new instance of type StubFacebookDialog</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookDialog.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookDialog.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookDialog.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.StubFacebookDialogPage">
+            <summary>Stub type of Facebook.Client.FacebookDialogPage</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.ArrangeOverride(System.Windows.Size)">
+            <summary>Sets the stub of FrameworkElement.ArrangeOverride(Size finalSize)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.ArrangeOverrideSize">
+            <summary>Sets the stub of FrameworkElement.ArrangeOverride(Size finalSize)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.InitializeStub">
+            <summary>Initializes a new instance of type StubFacebookDialogPage</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.MeasureOverride(System.Windows.Size)">
+            <summary>Sets the stub of FrameworkElement.MeasureOverride(Size availableSize)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.MeasureOverrideSize">
+            <summary>Sets the stub of FrameworkElement.MeasureOverride(Size availableSize)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnApplyTemplate">
+            <summary>Sets the stub of FrameworkElement.OnApplyTemplate()</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnApplyTemplate01">
+            <summary>Sets the stub of FrameworkElement.OnApplyTemplate()</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnBackKeyPress(System.ComponentModel.CancelEventArgs)">
+            <summary>Sets the stub of PhoneApplicationPage.OnBackKeyPress(CancelEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnBackKeyPressCancelEventArgs">
+            <summary>Sets the stub of PhoneApplicationPage.OnBackKeyPress(CancelEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnCreateAutomationPeer">
+            <summary>Sets the stub of UIElement.OnCreateAutomationPeer()</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnCreateAutomationPeer01">
+            <summary>Sets the stub of UIElement.OnCreateAutomationPeer()</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnDoubleTap(System.Windows.Input.GestureEventArgs)">
+            <summary>Sets the stub of Control.OnDoubleTap(GestureEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnDoubleTapGestureEventArgs">
+            <summary>Sets the stub of Control.OnDoubleTap(GestureEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnDragEnter(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of Control.OnDragEnter(DragEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnDragEnterDragEventArgs">
+            <summary>Sets the stub of Control.OnDragEnter(DragEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnDragLeave(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of Control.OnDragLeave(DragEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnDragLeaveDragEventArgs">
+            <summary>Sets the stub of Control.OnDragLeave(DragEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnDragOver(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of Control.OnDragOver(DragEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnDragOverDragEventArgs">
+            <summary>Sets the stub of Control.OnDragOver(DragEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnDrop(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of Control.OnDrop(DragEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnDropDragEventArgs">
+            <summary>Sets the stub of Control.OnDrop(DragEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnFragmentNavigation(System.Windows.Navigation.FragmentNavigationEventArgs)">
+            <summary>Sets the stub of Page.OnFragmentNavigation(FragmentNavigationEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnFragmentNavigationFragmentNavigationEventArgs">
+            <summary>Sets the stub of Page.OnFragmentNavigation(FragmentNavigationEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary>Sets the stub of Control.OnGotFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnGotFocusRoutedEventArgs">
+            <summary>Sets the stub of Control.OnGotFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnHold(System.Windows.Input.GestureEventArgs)">
+            <summary>Sets the stub of Control.OnHold(GestureEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnHoldGestureEventArgs">
+            <summary>Sets the stub of Control.OnHold(GestureEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>Sets the stub of Control.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnKeyDownKeyEventArgs">
+            <summary>Sets the stub of Control.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnKeyUp(System.Windows.Input.KeyEventArgs)">
+            <summary>Sets the stub of Control.OnKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnKeyUpKeyEventArgs">
+            <summary>Sets the stub of Control.OnKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnLostFocus(System.Windows.RoutedEventArgs)">
+            <summary>Sets the stub of Control.OnLostFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnLostFocusRoutedEventArgs">
+            <summary>Sets the stub of Control.OnLostFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of Control.OnLostMouseCapture(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnLostMouseCaptureMouseEventArgs">
+            <summary>Sets the stub of Control.OnLostMouseCapture(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnManipulationCompleted(System.Windows.Input.ManipulationCompletedEventArgs)">
+            <summary>Sets the stub of Control.OnManipulationCompleted(ManipulationCompletedEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnManipulationCompletedManipulationCompletedEventArgs">
+            <summary>Sets the stub of Control.OnManipulationCompleted(ManipulationCompletedEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnManipulationDelta(System.Windows.Input.ManipulationDeltaEventArgs)">
+            <summary>Sets the stub of Control.OnManipulationDelta(ManipulationDeltaEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnManipulationDeltaManipulationDeltaEventArgs">
+            <summary>Sets the stub of Control.OnManipulationDelta(ManipulationDeltaEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnManipulationStarted(System.Windows.Input.ManipulationStartedEventArgs)">
+            <summary>Sets the stub of Control.OnManipulationStarted(ManipulationStartedEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnManipulationStartedManipulationStartedEventArgs">
+            <summary>Sets the stub of Control.OnManipulationStarted(ManipulationStartedEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnMouseEnter(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of Control.OnMouseEnter(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnMouseEnterMouseEventArgs">
+            <summary>Sets the stub of Control.OnMouseEnter(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnMouseLeave(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of Control.OnMouseLeave(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnMouseLeaveMouseEventArgs">
+            <summary>Sets the stub of Control.OnMouseLeave(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of Control.OnMouseLeftButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnMouseLeftButtonDownMouseButtonEventArgs">
+            <summary>Sets the stub of Control.OnMouseLeftButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of Control.OnMouseLeftButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnMouseLeftButtonUpMouseButtonEventArgs">
+            <summary>Sets the stub of Control.OnMouseLeftButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnMouseMove(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of Control.OnMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnMouseMoveMouseEventArgs">
+            <summary>Sets the stub of Control.OnMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnMouseRightButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of Control.OnMouseRightButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnMouseRightButtonDownMouseButtonEventArgs">
+            <summary>Sets the stub of Control.OnMouseRightButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnMouseRightButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of Control.OnMouseRightButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnMouseRightButtonUpMouseButtonEventArgs">
+            <summary>Sets the stub of Control.OnMouseRightButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnMouseWheel(System.Windows.Input.MouseWheelEventArgs)">
+            <summary>Sets the stub of Control.OnMouseWheel(MouseWheelEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnMouseWheelMouseWheelEventArgs">
+            <summary>Sets the stub of Control.OnMouseWheel(MouseWheelEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs)">
+            <summary>Sets the stub of Page.OnNavigatedFrom(NavigationEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnNavigatedFromNavigationEventArgs">
+            <summary>Sets the stub of Page.OnNavigatedFrom(NavigationEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs)">
+            <summary>Sets the stub of Page.OnNavigatedTo(NavigationEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnNavigatedToNavigationEventArgs">
+            <summary>Sets the stub of Page.OnNavigatedTo(NavigationEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnNavigatingFrom(System.Windows.Navigation.NavigatingCancelEventArgs)">
+            <summary>Sets the stub of Page.OnNavigatingFrom(NavigatingCancelEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnNavigatingFromNavigatingCancelEventArgs">
+            <summary>Sets the stub of Page.OnNavigatingFrom(NavigatingCancelEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnOrientationChanged(Microsoft.Phone.Controls.OrientationChangedEventArgs)">
+            <summary>Sets the stub of PhoneApplicationPage.OnOrientationChanged(OrientationChangedEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnOrientationChangedOrientationChangedEventArgs">
+            <summary>Sets the stub of PhoneApplicationPage.OnOrientationChanged(OrientationChangedEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnRemovedFromJournal(System.Windows.Navigation.JournalEntryRemovedEventArgs)">
+            <summary>Sets the stub of PhoneApplicationPage.OnRemovedFromJournal(JournalEntryRemovedEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnRemovedFromJournalJournalEntryRemovedEventArgs">
+            <summary>Sets the stub of PhoneApplicationPage.OnRemovedFromJournal(JournalEntryRemovedEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnTap(System.Windows.Input.GestureEventArgs)">
+            <summary>Sets the stub of Control.OnTap(GestureEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnTapGestureEventArgs">
+            <summary>Sets the stub of Control.OnTap(GestureEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnTextInput(System.Windows.Input.TextCompositionEventArgs)">
+            <summary>Sets the stub of Control.OnTextInput(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnTextInputStart(System.Windows.Input.TextCompositionEventArgs)">
+            <summary>Sets the stub of Control.OnTextInputStart(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnTextInputStartTextCompositionEventArgs">
+            <summary>Sets the stub of Control.OnTextInputStart(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnTextInputTextCompositionEventArgs">
+            <summary>Sets the stub of Control.OnTextInput(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookDialogPage.OnTextInputUpdate(System.Windows.Input.TextCompositionEventArgs)">
+            <summary>Sets the stub of Control.OnTextInputUpdate(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookDialogPage.OnTextInputUpdateTextCompositionEventArgs">
+            <summary>Sets the stub of Control.OnTextInputUpdate(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookDialogPage.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookDialogPage.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookDialogPage.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.StubFacebookSession">
+            <summary>Stub type of Facebook.Client.FacebookSession</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookSession.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookSession.InitializeStub">
+            <summary>Initializes a new instance of type StubFacebookSession</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookSession.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookSession.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookSession.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.StubFacebookSessionCacheProvider">
+            <summary>Stub type of Facebook.Client.FacebookSessionCacheProvider</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookSessionCacheProvider.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookSessionCacheProvider.DeleteSessionData">
+            <summary>Sets the stub of FacebookSessionCacheProvider.DeleteSessionData()</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookSessionCacheProvider.DeleteSessionData01">
+            <summary>Sets the stub of FacebookSessionCacheProvider.DeleteSessionData()</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookSessionCacheProvider.GetSessionData">
+            <summary>Sets the stub of FacebookSessionCacheProvider.GetSessionData()</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookSessionCacheProvider.GetSessionData01">
+            <summary>Sets the stub of FacebookSessionCacheProvider.GetSessionData()</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookSessionCacheProvider.InitializeStub">
+            <summary>Initializes a new instance of type StubFacebookSessionCacheProvider</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookSessionCacheProvider.SaveSessionData(Facebook.Client.FacebookSession)">
+            <summary>Sets the stub of FacebookSessionCacheProvider.SaveSessionData(FacebookSession data)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookSessionCacheProvider.SaveSessionDataFacebookSession">
+            <summary>Sets the stub of FacebookSessionCacheProvider.SaveSessionData(FacebookSession data)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookSessionCacheProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookSessionCacheProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookSessionCacheProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.StubFacebookSessionClient">
+            <summary>Stub type of Facebook.Client.FacebookSessionClient</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookSessionClient.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookSessionClient.InitializeStub">
+            <summary>Initializes a new instance of type StubFacebookSessionClient</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookSessionClient.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookSessionClient.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookSessionClient.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.StubFacebookSessionIsolatedStorageCacheProvider">
+            <summary>Stub type of Facebook.Client.FacebookSessionIsolatedStorageCacheProvider</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookSessionIsolatedStorageCacheProvider.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookSessionIsolatedStorageCacheProvider.DeleteSessionData">
+            <summary>Sets the stub of FacebookSessionIsolatedStorageCacheProvider.DeleteSessionData()</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookSessionIsolatedStorageCacheProvider.DeleteSessionData01">
+            <summary>Sets the stub of FacebookSessionIsolatedStorageCacheProvider.DeleteSessionData()</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookSessionIsolatedStorageCacheProvider.GetSessionData">
+            <summary>Sets the stub of FacebookSessionIsolatedStorageCacheProvider.GetSessionData()</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookSessionIsolatedStorageCacheProvider.GetSessionData01">
+            <summary>Sets the stub of FacebookSessionIsolatedStorageCacheProvider.GetSessionData()</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookSessionIsolatedStorageCacheProvider.InitializeStub">
+            <summary>Initializes a new instance of type StubFacebookSessionIsolatedStorageCacheProvider</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookSessionIsolatedStorageCacheProvider.SaveSessionData(Facebook.Client.FacebookSession)">
+            <summary>Sets the stub of FacebookSessionIsolatedStorageCacheProvider.SaveSessionData(FacebookSession data)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubFacebookSessionIsolatedStorageCacheProvider.SaveSessionDataFacebookSession">
+            <summary>Sets the stub of FacebookSessionIsolatedStorageCacheProvider.SaveSessionData(FacebookSession data)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookSessionIsolatedStorageCacheProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookSessionIsolatedStorageCacheProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookSessionIsolatedStorageCacheProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.StubFacebookWebDialog">
+            <summary>Stub type of Facebook.Client.FacebookWebDialog</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookWebDialog.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubFacebookWebDialog.InitializeStub">
+            <summary>Initializes a new instance of type StubFacebookWebDialog</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookWebDialog.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookWebDialog.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubFacebookWebDialog.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Facebook.Client.Fakes.StubLoginPage">
+            <summary>Stub type of Facebook.Client.LoginPage</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.ArrangeOverride(System.Windows.Size)">
+            <summary>Sets the stub of FrameworkElement.ArrangeOverride(Size finalSize)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.ArrangeOverrideSize">
+            <summary>Sets the stub of FrameworkElement.ArrangeOverride(Size finalSize)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.InitializeStub">
+            <summary>Initializes a new instance of type StubLoginPage</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.MeasureOverride(System.Windows.Size)">
+            <summary>Sets the stub of FrameworkElement.MeasureOverride(Size availableSize)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.MeasureOverrideSize">
+            <summary>Sets the stub of FrameworkElement.MeasureOverride(Size availableSize)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnApplyTemplate">
+            <summary>Sets the stub of FrameworkElement.OnApplyTemplate()</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnApplyTemplate01">
+            <summary>Sets the stub of FrameworkElement.OnApplyTemplate()</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnBackKeyPress(System.ComponentModel.CancelEventArgs)">
+            <summary>Sets the stub of PhoneApplicationPage.OnBackKeyPress(CancelEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnBackKeyPressCancelEventArgs">
+            <summary>Sets the stub of PhoneApplicationPage.OnBackKeyPress(CancelEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnCreateAutomationPeer">
+            <summary>Sets the stub of UIElement.OnCreateAutomationPeer()</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnCreateAutomationPeer01">
+            <summary>Sets the stub of UIElement.OnCreateAutomationPeer()</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnDoubleTap(System.Windows.Input.GestureEventArgs)">
+            <summary>Sets the stub of Control.OnDoubleTap(GestureEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnDoubleTapGestureEventArgs">
+            <summary>Sets the stub of Control.OnDoubleTap(GestureEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnDragEnter(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of Control.OnDragEnter(DragEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnDragEnterDragEventArgs">
+            <summary>Sets the stub of Control.OnDragEnter(DragEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnDragLeave(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of Control.OnDragLeave(DragEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnDragLeaveDragEventArgs">
+            <summary>Sets the stub of Control.OnDragLeave(DragEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnDragOver(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of Control.OnDragOver(DragEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnDragOverDragEventArgs">
+            <summary>Sets the stub of Control.OnDragOver(DragEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnDrop(System.Windows.DragEventArgs)">
+            <summary>Sets the stub of Control.OnDrop(DragEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnDropDragEventArgs">
+            <summary>Sets the stub of Control.OnDrop(DragEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnFragmentNavigation(System.Windows.Navigation.FragmentNavigationEventArgs)">
+            <summary>Sets the stub of Page.OnFragmentNavigation(FragmentNavigationEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnFragmentNavigationFragmentNavigationEventArgs">
+            <summary>Sets the stub of Page.OnFragmentNavigation(FragmentNavigationEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnGotFocus(System.Windows.RoutedEventArgs)">
+            <summary>Sets the stub of Control.OnGotFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnGotFocusRoutedEventArgs">
+            <summary>Sets the stub of Control.OnGotFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnHold(System.Windows.Input.GestureEventArgs)">
+            <summary>Sets the stub of Control.OnHold(GestureEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnHoldGestureEventArgs">
+            <summary>Sets the stub of Control.OnHold(GestureEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnKeyDown(System.Windows.Input.KeyEventArgs)">
+            <summary>Sets the stub of Control.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnKeyDownKeyEventArgs">
+            <summary>Sets the stub of Control.OnKeyDown(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnKeyUp(System.Windows.Input.KeyEventArgs)">
+            <summary>Sets the stub of Control.OnKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnKeyUpKeyEventArgs">
+            <summary>Sets the stub of Control.OnKeyUp(KeyEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnLostFocus(System.Windows.RoutedEventArgs)">
+            <summary>Sets the stub of Control.OnLostFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnLostFocusRoutedEventArgs">
+            <summary>Sets the stub of Control.OnLostFocus(RoutedEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of Control.OnLostMouseCapture(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnLostMouseCaptureMouseEventArgs">
+            <summary>Sets the stub of Control.OnLostMouseCapture(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnManipulationCompleted(System.Windows.Input.ManipulationCompletedEventArgs)">
+            <summary>Sets the stub of Control.OnManipulationCompleted(ManipulationCompletedEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnManipulationCompletedManipulationCompletedEventArgs">
+            <summary>Sets the stub of Control.OnManipulationCompleted(ManipulationCompletedEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnManipulationDelta(System.Windows.Input.ManipulationDeltaEventArgs)">
+            <summary>Sets the stub of Control.OnManipulationDelta(ManipulationDeltaEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnManipulationDeltaManipulationDeltaEventArgs">
+            <summary>Sets the stub of Control.OnManipulationDelta(ManipulationDeltaEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnManipulationStarted(System.Windows.Input.ManipulationStartedEventArgs)">
+            <summary>Sets the stub of Control.OnManipulationStarted(ManipulationStartedEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnManipulationStartedManipulationStartedEventArgs">
+            <summary>Sets the stub of Control.OnManipulationStarted(ManipulationStartedEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnMouseEnter(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of Control.OnMouseEnter(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnMouseEnterMouseEventArgs">
+            <summary>Sets the stub of Control.OnMouseEnter(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnMouseLeave(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of Control.OnMouseLeave(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnMouseLeaveMouseEventArgs">
+            <summary>Sets the stub of Control.OnMouseLeave(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of Control.OnMouseLeftButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnMouseLeftButtonDownMouseButtonEventArgs">
+            <summary>Sets the stub of Control.OnMouseLeftButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of Control.OnMouseLeftButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnMouseLeftButtonUpMouseButtonEventArgs">
+            <summary>Sets the stub of Control.OnMouseLeftButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnMouseMove(System.Windows.Input.MouseEventArgs)">
+            <summary>Sets the stub of Control.OnMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnMouseMoveMouseEventArgs">
+            <summary>Sets the stub of Control.OnMouseMove(MouseEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnMouseRightButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of Control.OnMouseRightButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnMouseRightButtonDownMouseButtonEventArgs">
+            <summary>Sets the stub of Control.OnMouseRightButtonDown(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnMouseRightButtonUp(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>Sets the stub of Control.OnMouseRightButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnMouseRightButtonUpMouseButtonEventArgs">
+            <summary>Sets the stub of Control.OnMouseRightButtonUp(MouseButtonEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnMouseWheel(System.Windows.Input.MouseWheelEventArgs)">
+            <summary>Sets the stub of Control.OnMouseWheel(MouseWheelEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnMouseWheelMouseWheelEventArgs">
+            <summary>Sets the stub of Control.OnMouseWheel(MouseWheelEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnNavigatedFrom(System.Windows.Navigation.NavigationEventArgs)">
+            <summary>Sets the stub of Page.OnNavigatedFrom(NavigationEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnNavigatedFromNavigationEventArgs">
+            <summary>Sets the stub of Page.OnNavigatedFrom(NavigationEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs)">
+            <summary>Sets the stub of LoginPage.OnNavigatedTo(NavigationEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnNavigatedToNavigationEventArgs">
+            <summary>Sets the stub of LoginPage.OnNavigatedTo(NavigationEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnNavigatingFrom(System.Windows.Navigation.NavigatingCancelEventArgs)">
+            <summary>Sets the stub of LoginPage.OnNavigatingFrom(NavigatingCancelEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnNavigatingFromNavigatingCancelEventArgs">
+            <summary>Sets the stub of LoginPage.OnNavigatingFrom(NavigatingCancelEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnOrientationChanged(Microsoft.Phone.Controls.OrientationChangedEventArgs)">
+            <summary>Sets the stub of PhoneApplicationPage.OnOrientationChanged(OrientationChangedEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnOrientationChangedOrientationChangedEventArgs">
+            <summary>Sets the stub of PhoneApplicationPage.OnOrientationChanged(OrientationChangedEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnRemovedFromJournal(System.Windows.Navigation.JournalEntryRemovedEventArgs)">
+            <summary>Sets the stub of PhoneApplicationPage.OnRemovedFromJournal(JournalEntryRemovedEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnRemovedFromJournalJournalEntryRemovedEventArgs">
+            <summary>Sets the stub of PhoneApplicationPage.OnRemovedFromJournal(JournalEntryRemovedEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnTap(System.Windows.Input.GestureEventArgs)">
+            <summary>Sets the stub of Control.OnTap(GestureEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnTapGestureEventArgs">
+            <summary>Sets the stub of Control.OnTap(GestureEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnTextInput(System.Windows.Input.TextCompositionEventArgs)">
+            <summary>Sets the stub of Control.OnTextInput(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnTextInputStart(System.Windows.Input.TextCompositionEventArgs)">
+            <summary>Sets the stub of Control.OnTextInputStart(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnTextInputStartTextCompositionEventArgs">
+            <summary>Sets the stub of Control.OnTextInputStart(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnTextInputTextCompositionEventArgs">
+            <summary>Sets the stub of Control.OnTextInput(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="M:Facebook.Client.Fakes.StubLoginPage.OnTextInputUpdate(System.Windows.Input.TextCompositionEventArgs)">
+            <summary>Sets the stub of Control.OnTextInputUpdate(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="F:Facebook.Client.Fakes.StubLoginPage.OnTextInputUpdateTextCompositionEventArgs">
+            <summary>Sets the stub of Control.OnTextInputUpdate(TextCompositionEventArgs e)</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubLoginPage.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubLoginPage.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Facebook.Client.Fakes.StubLoginPage.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>
