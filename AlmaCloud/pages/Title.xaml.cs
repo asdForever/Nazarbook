@@ -21,15 +21,15 @@ namespace AlmaCloud.pages
         {
             DispatcherTimer timer = new DispatcherTimer()
             {
-                Interval = TimeSpan.FromMilliseconds(10)
+                Interval = TimeSpan.FromMilliseconds(5)
             };
 
             timer.Start();
 
             timer.Tick += (s, u) =>
             {
-                whiteGrid.Opacity -= 0.01;
-                backgroundGrid.Opacity += 0.01;
+                whiteGrid.Opacity -= 0.02;
+                backgroundGrid.Opacity += 0.02;
                 if (whiteGrid.Opacity <= 0)
                 {
                     timer.Stop();
@@ -48,7 +48,7 @@ namespace AlmaCloud.pages
 
             timer.Tick += (s, u) =>
             {
-                whiteGrid.Opacity += 0.015;
+                whiteGrid.Opacity += 0.02;
                 if (whiteGrid.Opacity >= 1)
                 {
                     timer.Stop();
@@ -82,10 +82,10 @@ namespace AlmaCloud.pages
         private void LayoutRoot_Loaded(object sender, RoutedEventArgs e)
         {
             startAnimation();
-            try { while (NavigationService.RemoveBackEntry() != null) ; }
-            catch (NullReferenceException ex) {
-                MessageBox.Show("NullReferenceException during Title.LayoutRoot_Loaded: " + ex.Message, "Error", MessageBoxButton.OK);
-            }
+            //try { while (NavigationService.RemoveBackEntry() != null) ; }
+            //catch (NullReferenceException ex) {
+            //    MessageBox.Show("NullReferenceException during Title.LayoutRoot_Loaded: " + ex.Message, "Error", MessageBoxButton.OK);
+            //}
         }
     }
 }

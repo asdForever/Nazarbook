@@ -42,10 +42,10 @@ namespace AlmaCloud.pages
         }
         private void LayoutRoot_Loaded(object sender, RoutedEventArgs e)
         {
-            try { while (NavigationService.RemoveBackEntry() != null) ; }
-            catch (NullReferenceException ex) {
-                MessageBox.Show("NullReferenceException during AnnotationPage.LayoutRoot_Loaded: " + ex.Message, "Error", MessageBoxButton.OK);
-            }
+            //try { while (NavigationService.RemoveBackEntry() != null) ; }
+            //catch (NullReferenceException ex) {
+            //    MessageBox.Show("NullReferenceException during AnnotationPage.LayoutRoot_Loaded: " + ex.Message, "Error", MessageBoxButton.OK);
+            //}
         }
     }
 }

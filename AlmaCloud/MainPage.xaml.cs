@@ -14,6 +14,10 @@ using System.Windows.Threading;
 using System.Text.RegularExpressions;
 using TweetSharp;
 using System.Linq;
+using Microsoft.Phone.Net.NetworkInformation;
+using System.Net;
+using System.IO.IsolatedStorage;
+using AlmaCloud.Classes.test;
 
 namespace AlmaCloud
 {
@@ -23,8 +27,11 @@ namespace AlmaCloud
         TextWorker tw;
         private OAuthRequestToken requestToken;
         private TwitterService service;
-        Dispatcher dispatchme = Deployment.Current.Dispatcher;
+        Dispatcher dispatcher = Deployment.Current.Dispatcher;
         private GestureListener gl;
+
+        public string value = "";
+        public string value2 = "";
 
         // Constructor
         public MainPage()
@@ -212,104 +219,73 @@ namespace AlmaCloud
         {
             if (Book.aphorismList[Book.currentAphorism].isSharedT != true)
             {
-                AuthorizeTwitter();
-            }
-        }
-        public void AuthorizeTwitter()
-        {
-            gl.Flick -= new EventHandler<FlickGestureEventArgs>(GestureListener_Flick);
-            if (String.IsNullOrWhiteSpace(GlobalVariables.twitterAccessToken))
-            {
-                pinGrid.Visibility = Visibility.Visible;
-                BrowserControl.Visibility = Visibility.Visible;
-
-                service = new TwitterService(GlobalVariables.twitterConsumerKey, GlobalVariables.twitterConsumerKeySecret);
-                var cb = new Action<OAuthRequestToken, TwitterResponse>(CallBackToken);
-                service.GetRequestToken("oob", CallBackToken);
-            }
-            else
-            {
-                Tweet();
-            }
-        }
-        void pinButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (String.IsNullOrEmpty(pinText.Text))
-                MessageBox.Show("Please enter PIN");
-            else
-            {
+                IsolatedStorageSettings mysetting = IsolatedStorageSettings.ApplicationSettings;
                 try
                 {
-                    var cb = new Action<OAuthAccessToken, TwitterResponse>(CallBackVerifiedResponse);
-                    service.GetAccessToken(requestToken, pinText.Text, CallBackVerifiedResponse);
+                    mysetting.TryGetValue("twitter_token", out value);
+                    mysetting.TryGetValue("twitter_tokensecret", out value2);
                 }
-                catch
+                catch (Exception e)
                 {
-                    MessageBox.Show("Something is wrong with the PIN. Try again please.", "Error", MessageBoxButton.OK);
-                    gl.Flick += new EventHandler<FlickGestureEventArgs>(GestureListener_Flick);
+                    MessageBox.Show(e.Message);
+                }
+                if (value == null)
+                { 
+                    NavigationService.Navigate(new Uri("/Pages/TwitterAuthPage.xaml", UriKind.Relative)); 
+                }
+                else
+                {
+                    service = new TwitterService(TwitterSettings.ConsumerKey, TwitterSettings.ConsumerKeySecret, value, value2);
+                    service.SendTweet(new SendTweetOptions { Status = Book.aphorismList[Book.currentAphorism].textList[Book.langID] },
+                      (statuses, response) =>
+                      {
+                          if (response.StatusCode == HttpStatusCode.OK)
+                          {
+
+                              dispatcher.BeginInvoke(() =>
+                              {
+                                  Book.aphorismList[Book.currentAphorism].isSharedT = true;
+                                  UpdateUI();
+                              }
+                              );
+                          }
+                          else
+                          {
+                              MessageBox.Show(response.StatusCode.ToString());
+                          }
+                      });
                 }
             }
-        }
-        private void pinCancelButton_Click(object sender, RoutedEventArgs e)
-        {
-            pinGrid.Visibility = Visibility.Collapsed;
-            BrowserControl.Visibility = Visibility.Collapsed;
-            gl.Flick += new EventHandler<FlickGestureEventArgs>(GestureListener_Flick);
-        }
-        void CallBackToken(OAuthRequestToken rt, TwitterResponse response)
-        {
-            Uri uri = service.GetAuthorizationUri(rt);
-            requestToken = rt;
-            BrowserControl.Dispatcher.BeginInvoke(() => BrowserControl.Navigate(uri));
-        }
-        void CallBackVerifiedResponse(OAuthAccessToken at, TwitterResponse response)
-        {
-            if (at != null)
-            {
-                GlobalVariables.twitterAccessToken = at.Token;
-                GlobalVariables.twitterAccessTokenSecret = at.TokenSecret;
-                Tweet();
-            }
-            else
-            {
-                gl.Flick += new EventHandler<FlickGestureEventArgs>(GestureListener_Flick);
-            }
-        }
-        private async void Tweet()
-        {
-            OAuthUtility.ComputeHash = (key, buffer) => { using (var hmac = new HMACSHA1(key)) { return hmac.ComputeHash(buffer); } };
-
-            var client = OAuthUtility.CreateOAuthClient(GlobalVariables.twitterConsumerKey, GlobalVariables.twitterConsumerKeySecret, new AccessToken(GlobalVariables.twitterAccessToken, GlobalVariables.twitterAccessTokenSecret));
-            // Post
-            var content = new FormUrlEncodedContent(new[] { new KeyValuePair<string, string>("status", Book.aphorismList[Book.currentAphorism].textList[Book.langID]) });
-            var response = await client.PostAsync("http://api.twitter.com/1.1/statuses/update.json", content);
-            var json = await response.Content.ReadAsStringAsync();
-
-            Dispatcher.BeginInvoke(() =>
-            {
-                pinGrid.Visibility = Visibility.Collapsed;
-                BrowserControl.Visibility = Visibility.Collapsed;
-
-                Book.aphorismList[Book.currentAphorism].isSharedT = true;
-                UpdateUI();
-                gl.Flick += new EventHandler<FlickGestureEventArgs>(GestureListener_Flick);
-            });
         }
         #endregion
         #region facebook button
         private void buttonFacebookHandler()
         {
-            gl.Flick -= new EventHandler<FlickGestureEventArgs>(GestureListener_Flick);
-            if (Book.aphorismList[Book.currentAphorism].isSharedF != true)
+            try
             {
-                if (!App.isAuthenticated)
+                if (Microsoft.Phone.Net.NetworkInformation.DeviceNetworkInformation.IsNetworkAvailable)
                 {
-                    Authenticate();
+                    gl.Flick -= new EventHandler<FlickGestureEventArgs>(GestureListener_Flick);
+                    if (Book.aphorismList[Book.currentAphorism].isSharedF != true)
+                    {
+                        if (!App.isAuthenticated)
+                        {
+                            Authenticate();
+                        }
+                        else
+                        {
+                            PublishStory();
+                        }
+                    }
                 }
                 else
                 {
-                    PublishStory();
+                    MessageBox.Show("Please check your internet connection");
                 }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
             }
         }
         private FacebookSession session;
@@ -327,7 +303,7 @@ namespace AlmaCloud
             catch (InvalidOperationException e)
             {
                 message = "Login failed! Exception details: " + e.Message;
-                MessageBox.Show(message); 
+                MessageBox.Show(message);
                 gl.Flick += new EventHandler<FlickGestureEventArgs>(GestureListener_Flick);
             }
         }
@@ -376,10 +352,10 @@ namespace AlmaCloud
 
         private void LayoutRoot_Loaded(object sender, RoutedEventArgs e)
         {
-            try { while (NavigationService.RemoveBackEntry() != null) ; }
-            catch (NullReferenceException ex) {
-                MessageBox.Show("NullReferenceException during MainPage.LayoutRoot_Loaded: " + ex.Message, "Error", MessageBoxButton.OK);
-            }
+            //try { while (NavigationService.RemoveBackEntry() != null) ; }
+            //catch (NullReferenceException ex) {
+            //    MessageBox.Show("NullReferenceException during MainPage.LayoutRoot_Loaded: " + ex.Message, "Error", MessageBoxButton.OK);
+            //}
         }
 
         private void MenuImage_Tap(object sender, System.Windows.Input.GestureEventArgs e)

@@ -64,13 +64,6 @@
         <TextBlock x:Name="textBlockQuote" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60,0,0,0" TextWrapping="Wrap" Foreground="Black" FontWeight="Normal" FontSize="35" Width="360" />
         <TextBlock x:Name="textBlockLanguage" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="300,0,0,25" Width="70" Foreground="Gray" FontWeight="Bold" FontSize="40" Text="қаз" Tap="textBlockLanguage_Tap" />
 
-        <phone:WebBrowser x:Name="BrowserControl" Height="470" Width="480" Margin="0,200,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Collapsed" />
-        <Grid x:Name="pinGrid" Height="130" Width="480" Margin="0,70,0,0" Background="Gray" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Collapsed">
-            <TextBlock Text="Please enter PIN" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="35" Foreground="Black" FontWeight="Bold" />
-            <TextBox x:Name="pinText" Width="200" Margin="25,50,50,0" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" BorderBrush="Black" />
-            <Button x:Name="pinButton" Content="Ok" Margin="0,50,160,0" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="Black" BorderBrush="Black" Click="pinButton_Click" />
-            <Button x:Name="pinCancelButton" Content="Cancel" Margin="0,50,25,0" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="Black" BorderBrush="Black" Click="pinCancelButton_Click" />
-        </Grid>
         <Image HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,20,20,0" Width="40" Height="40" Source="/Images/menuButtonBackground.png" Tap="MenuImage_Tap" />
         <Grid x:Name="menu" Width="480" Height="593" Margin="0,75,0,100" Visibility="Collapsed">
             <Grid.Background>
